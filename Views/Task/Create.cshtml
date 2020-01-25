@@ -22,6 +22,7 @@
                 <input asp-for="Deadline" class="form-control" />
                 <span asp-validation-for="Deadline" class="text-danger"></span>
             </div>
+            <p>If no topics, please <a href="https://localhost:5001/Topic/Create">create</a> one</p>
             <div class="form-group">
                 @Html.DropDownListFor(m => m.TopicId, (SelectList)ViewData["Topics"])
             </div>
